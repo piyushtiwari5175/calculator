@@ -1,0 +1,83 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+.calculator {
+  height: 70%;
+  width: 40%;
+  min-height: 400px;
+  min-width: 300px;
+  background-color: white;
+  border: 2px solid black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  padding: 0; /* Ensure no padding */
+}
+
+#heading {
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px 8px 0 0;
+}
+
+.display-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 2.8rem;
+  color: var(--blue);
+  height: 20%;
+  width: 100%;
+  background-color: white;
+  border-bottom: 2px solid black;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.button-container {
+  height: 60%;
+  width: 100%;
+  min-height: 300px;
+  background-color: white;
+  border-radius: 0 0 8px 8px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.button {
+  height: calc(25% - 10px);
+  width: 22%;
+  background-color: white;
+  color: red;
+  border: 2px solid lightgrey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 4px;
+}
+
+.button:hover {
+  background-color: lightgrey;
+  color: black;
+}
+
+#button-zero {
+  width: calc(48% - 10px);
+}
